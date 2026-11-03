@@ -1,0 +1,88 @@
+
+/* ===== ShopEase Global Theme ===== */
+
+:root {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+
+  color: #1e293b;
+  background: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #1d4ed8;
+  --primary-dark: #172554;
+  --accent: #f59e0b;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --success: #15803d;
+  --shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-dark);
+  line-height: 1.3;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 15px;
+}
+
+input,
+select,
+textarea {
+  font-size: 15px;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #172554;
+}
